@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0; /* Light gray background */
+    color: #1a1a1a; /* Dark text color */
+}
+
+header {
+    background-color: #333; /* Dark gray for header */
+    color: #ffffff; /* White text color */
+    padding: 60px;
+    text-align: center;
+    border-bottom: 6px solid #666; /* Medium gray border */
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em; /* Increased font size */
+    margin: 0;
+    color: #ffffff; /* White */
+    text-transform: uppercase;
+}
+
+section#hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('images/ctu.jpg') no-repeat center center/cover; /* Background image */
+}
+
+#hero div {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: #fff; /* White text color */
+}
+
+#hero h1 {
+    font-size: 4em; 
+    font-family: 'Playfair Display', serif;
+}
+
+#hero p {
+    font-size: 1.5em; 
+    margin: 20px 0;
+    color: white;
+}
+
+#hero a {
+    text-decoration: none; 
+    padding: 15px 30px; 
+    background-color: #ff6f61; 
+    color: white; 
+    border-radius: 5px; 
+    font-size: 1.2em; 
+    transition: background-color 0.3s;
+}
+
+section#about {
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 1000px;
+    background-color: #ffffff; /* White background */
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em; /* Increased font size */
+    color: #333; /* Dark gray for headings */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section p {
+    font-size: 1.4em; /* Slightly smaller font size */
+    color: #424242; /* Darker gray for better readability */
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    background-color: #ffffff; /* White background */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive images */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 6px solid #ccc; /* Light gray border */
+}
+
+.gallery-item h3 {
+    font-family: 'Playfair Display', serif;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text */
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333; /* Dark gray for footer */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
